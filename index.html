@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eCommerce Store</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Our eCommerce Store</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="signup.html">Sign Up</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="search-bar">
+      <input type="text" id="search" placeholder="Search Products">
+    </div>
+    
+    <div class="filter-bar">
+      <select id="filter">
+        <option value="all">All</option>
+        <option value="electronics">Electronics</option>
+        <option value="clothing">Clothing</option>
+      </select>
+    </div>
+
+    <section class="product-listing" id="product-list">
+      <!-- Products will be dynamically inserted here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Our eCommerce Store</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
